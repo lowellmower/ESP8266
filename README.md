@@ -1,5 +1,29 @@
 # Clear and Flash Firmware onto ESP8266 and Connect to Wifi
 
+### Spec:
+Chip Family:
+  * ESP8266
+
+Chip:
+  * ESP-12E (12F)
+
+Memory:
+  * 4MB SPI flash storage
+
+Power:
+  * 3.3V 500mA voltage regulator (LM1117)
+
+Extensions:
+  * micro USB to Serial UART Adapter
+  * 30 pin breakout
+  * physical reset and flash buttons
+
+### ESP-12E Pin Schematic:
+Chip:
+![esp8266_esp12e_pinout picture](esp8266_esp12e_pinout.png)
+Board:
+![esp8266_devkit_pinout picture](esp8266_devkit_pinout.png)
+
 ### All commands run within the scope of the directory
 Before beginning, ensure there are no processes currently hogging TTY resources
 ```
@@ -68,7 +92,7 @@ Flash map 4MB:512/512, manuf 0xe0 chip 0x4016
 
 # PASS CONNECTION INFO AND BASIC FEEDBACK
 >wifi.connect("burgercats-2.4GHz",
-              {password: "Chummin04."},
+              {password: "********"},
               function(err){
                 if(err)console.log(err);
                 else console.log("Connected!");
@@ -99,6 +123,9 @@ Flash map 4MB:512/512, manuf 0xe0 chip 0x4016
 ```
 
 ### Helpful Links:
-- [espruino.com](http://www.espruino.com/ESP8266_Flashing) general info
+- [espruino.com](http://www.espruino.com/ESP8266_Flashing) general info on flashing JS
+- [nodelua](https://nodelua.org/) flashing lua (about 100x smaller than JS)
 - [esptool](https://github.com/espressif/esptool) in python
+- [USB to UART Bridge VCP Drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) from Silicon Labs
+- [ESP8266 Community Forum](http://www.esp8266.com/)
 
