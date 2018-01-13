@@ -149,4 +149,4 @@ sending the signal `0(b)01010101` where `0(b)` is the starting bit
 
 When communicating directly to pin headers, the headers map to the serial cable
 typically over six pins; `RX(I/O)`, `TX(I/O)`, `GND`, `DTR`, `VCC`x2 (3v3 or 5v)
-[USB_to_UART_header_cable_reference](USB_to_UART_header_cable_reference.png)
+![USB_to_UART_header_cable_reference](USB_to_UART_header_cable_reference.png)
