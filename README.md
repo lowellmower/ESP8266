@@ -129,3 +129,24 @@ Flash map 4MB:512/512, manuf 0xe0 chip 0x4016
 - [USB to UART Bridge VCP Drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) from Silicon Labs
 - [ESP8266 Community Forum](http://www.esp8266.com/)
 
+### Vernacular and Understandings
+- UART (universally asynchronous receiver/transmitter)
+- TTL (transistor-transistor logic)
+- OV (typically 3.3v, or low, or 0 - with respect to TTL)
+- VCC (typically 5v, or high, or 1 - with respect to TTL)
+- RS-232 (recommended standard 232, 9 pin serial port, think monitor)^*
+
+
+* By the RS-232 standard a logic high ('1') is represented by a negative voltage
+anywhere from -3 to -25V – while a logic low ('0') transmits a positive voltage
+that can be anywhere from +3 to +25V. On most PCs these signals swing from -13 to
++13V. The more nuanced voltage structure of `RS-232` allows for more reliable data
+communication over longer distances in comparison its `TTL` counter part.
+
+![RS-232_vs_TTL_timing](RS-232_vs_TTL_timing.png)
+above is an example of the communication differences between `RS-232` and `TTL`
+sending the signal `0(b)01010101` where `0(b)` is the starting bit
+
+When communicating directly to pin headers, the headers map to the serial cable
+typically over six pins; `RX(I/O)`, `TX(I/O)`, `GND`, `DTR`, `VCC`x2 (3v3 or 5v)
+[USB_to_UART_header_cable_reference](USB_to_UART_header_cable_reference.png)
