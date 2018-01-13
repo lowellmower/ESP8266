@@ -128,6 +128,8 @@ Flash map 4MB:512/512, manuf 0xe0 chip 0x4016
 - [esptool](https://github.com/espressif/esptool) in python
 - [USB to UART Bridge VCP Drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) from Silicon Labs
 - [ESP8266 Community Forum](http://www.esp8266.com/)
+- [ESP Easy](https://www.letscontrolit.com/wiki/index.php/ESPEasy)
+- [Tasmota](https://github.com/arendst/Sonoff-Tasmota)
 
 ### Vernacular and Understandings
 - UART (universally asynchronous receiver/transmitter)
